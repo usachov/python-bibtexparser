@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+from setuptools import setup
 from bibtexparser import info
 
 setup(
@@ -11,5 +11,6 @@ setup(
     license      = info.LICENSE,
     author_email = info.EMAIL,
     description  = info.SHORT_DESCRIPTION,
-    packages = ['bibtexparser'],
+    packages     = ['bibtexparser'],
+    test_suite   = "bibtexparser.tests",
 )
