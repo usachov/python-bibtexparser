@@ -16,4 +16,4 @@ script:
   - make html
 
 after_success:
-  - coveralls
+  - coveralls debug
